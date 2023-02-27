@@ -17,9 +17,9 @@ resource "aws_instance" "ec2_instance" {
     Name = var.instance_name
   }
 
-  # Open port 22 to all traffic
+  # Open port 21 to all traffic
   ingress {
-    from_port   = 22
+    from_port   = 21
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
